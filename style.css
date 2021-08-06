@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://kit.fontawesome.com/87a57648ea.js");
+/* initial styling */
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    max-width: 1200px;
+    font-family: 'Poppins', sans-serif;
+}
+.width{
+    width: 90%;
+    margin: 0 auto;
+}
+/* main section styling */
+main{
+    margin-top: 70px;
+}
+/* Top section css rules */
+.top-section{
+    background-color: #2D25A0;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+
+}
+.navigation nav ul{
+    display: flex;
+    align-items: center;
+}
+.navigation nav ul li,a.active{
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+
+.navigation nav ul li:hover{
+    background-color: #3c2ff7;
+    border-radius: 4px;
+    transition: .3s all;
+}
+
+.navigation nav ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.navigation div a{
+    text-decoration: none;
+    color: white;
+}
+.log-in{
+    background-color: #E02C6D;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    transition:  1s ease .2s;
+    font-size: 16px;
+}
+.log-in:hover{
+    background-color: rgb(34, 211, 73);
+    text-transform:uppercase;
+    
+}
+.banner-text h1{
+    font-size: 64px;
+    color: white;
+    margin-top: 121px;
+    
+}
+/* css rules for banner */
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+}
+.banner .banner-img img{
+    width: 100%;
+}
+/* css rules for animate */
+.banner:hover .banner-img >img{
+    transform: scale(.9) rotate(360deg);
+    transition: 1s ease-in-out 1s;
+}
+/* CSS rules for player section */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px 2
+    0px;
+}
+.players .player{
+    box-shadow: 13px 20px 28px grey;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.players .player img{
+    width: 100%;
+}
+.player .about h2{
+    font-size: 25px;
+}
+.initial-text h1{
+    color: black;
+}
+.bottom-banner{
+    margin-top: 165px;
+}
+footer{
+    margin-top: 158px;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+footer img{
+    height: 110px;
+}
+.icons img{
+    height: 52px;
+    padding: 10px;
+    
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+.fas{
+    color: white;
+}
+/* css rules for making responsive */
+@media (max-width:500px) {
+    .banner{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .banner-img{
+        margin-top: 50px;
+    }
+    .players{
+        grid-template-columns: 1fr;
+    }
+    .width{
+        margin: 0 auto;
+    }
+    .navigation{
+        display: none;
+    }
+    .initial-text h1{
+        font-size: 30px;
+    }
+    footer img{
+        height: 64px;
+    }
+    .about h2{
+        font-size: 28px;
+    }
+    .banner-text h1{
+        font-size: 36px;
+    }
+    .width{
+        width: 100%;
+    }
+    .players{
+        gap: 24px 0;
+    }
+    
+    
+}
+@media (min-width:501px) and (max-width:720px) {
+    .navigation{
+        display: none;
+    }
+    .banner{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .players{
+        grid-template-columns: 1fr 1fr;
+    }
+    .width{
+        width: 100%;
+    }
+    .players{
+        gap: 24px 0;
+    }
+    .banner-img{
+        margin-top: 50px;
+    }
+    .about h2{
+        font-size: 28px;
+    }
+    .banner-text h1{
+        font-size: 40px;
+    }
+    
+}
